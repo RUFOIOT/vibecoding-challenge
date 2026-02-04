@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBE EDUCATION - Landing Page V3</title>
+    <style>
+        /* Estilos Base */
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+        .container { width: 80%; margin: auto; padding: 20px; max-width: 1200px; }
+        .section { padding: 50px 0; margin-bottom: 30px; border-radius: 8px; }
+        
+        /* Placeholder Styles: DIV gris grande con icono/texto */
+        .image-placeholder {
+            background-color: #e0e0e0;
+            border: 2px dashed #9e9e9e;
+            color: #616161;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 300px;
+            margin: 20px 0;
+            border-radius: 12px;
+            font-size: 1.2em;
+            position: relative;
+            overflow: hidden; /* Para que la imagen eventual se ajuste */
+        }
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0; /* Imagen placeholder oculta, lista para ser reemplazada */
+        }
+        .image-placeholder::before {
+            content: '🖼️ Reemplazar con Imagen de Alto Impacto';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        /* CTA Styles: Llamador Visual MEJORADO */
+        .cta-button {
+            display: inline-block;
+            padding: 18px 50px; /* Más grande */
+            font-size: 1.6em;
+            font-weight: 900; /* Extra bold */
+            color: white;
+            background-color: #ff5722; /* Naranja/Rojo Vibrante */
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 6px 20px rgba(255, 87, 34, 0.6); /* Sombra más fuerte */
+            animation: pulse 2s infinite; /* Animación llamativa */
+        }
+        .cta-button:hover {
+            background-color: #e64a19;
+            transform: scale(1.05);
+        }
+        .cta-container {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 6px 20px rgba(255, 87, 34, 0.6); }
+            50% { box-shadow: 0 6px 25px rgba(255, 87, 34, 0.9); }
+            100% { box-shadow: 0 6px 20px rgba(255, 87, 34, 0.6); }
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #2196f3; color: white; padding: 25px 0; text-align: center;">
+        <h1>VIBE EDUCATION - LPC V3</h1>
+        <p>Acelera tu éxito con la nueva metodología de VIBE.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- SECCIÓN 1: CONTRASTE (MODIFICADA V3) -->
+        <section class="section" style="background-color: white; border: 1px solid #ddd;">
+            <h2 style="color: #2196f3;">Sección 1: Contraste - El Antes y el Después de VIBE</h2>
+            <p style="font-size: 1.1em;">¿Estancado o en Crecimiento Exponencial? Compara tu realidad actual con la transformación que VIBE te ofrece.</p>
+
+            <!-- PLACEHOLDER DE IMAGEN 1 (Contraste) -->
+            <div class="image-placeholder">
+                <!-- NOTA: Coloca aquí una imagen o composición que muestre un FUERTE CONTRASTE. Ejemplo: Foto de un emprendedor exitoso sonriendo y mirando hacia el futuro (bright/color) VS. un pequeño recuadro de alguien frustrado o con cara de preocupación (dark/monocromo). -->
+                <img src="URL_DE_TU_IMAGEN_DE_CONTRASTE_AQUI" alt="Placeholder Contraste: Éxito vs. Estancamiento" />
+            </div>
+
+            <p style="text-align: center; font-style: italic; margin-top: 30px;">"El momento de cambiar es ahora. No esperes a que tu competencia tome la delantera."</p>
+
+            <div class="cta-container">
+                <!-- LLAMADOR VISUAL (CTA) MEJORADO -->
+                <a href="#registro" class="cta-button">
+                    ¡TRANSFORMA MI FUTURO HOY!
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: USOS AVANZADOS (MODIFICADA V3) -->
+        <section class="section" style="background-color: #e3f2fd; border: 1px solid #bbdefb;">
+            <h2 style="color: #ff5722;">Sección 2: Usos Avanzados - La Maestría Secreta</h2>
+            <p style="font-size: 1.1em;">Descubre cómo llevar las técnicas VIBE al siguiente nivel con nuestras estrategias avanzadas.</p>
+
+            <div style="display: flex; gap: 30px; margin-top: 30px;">
+                <div style="flex: 1;">
+                    <h3>1. Escalabilidad Ilimitada</h3>
+                    <!-- PLACEHOLDER DE IMAGEN 2 (Uso Avanzado 1) -->
+                    <div class="image-placeholder" style="min-height: 200px;">
+                        <!-- NOTA: Imagen de un gráfico de crecimiento exponencial con flechas que apuntan hacia arriba, o un diagrama de infraestructura de negocios escalable. -->
+                        <img src="URL_DE_TU_IMAGEN_DE_ESCALABILIDAD_AQUI" alt="Placeholder Uso Avanzado 1: Gráfico de Escalabilidad" />
+                    </div>
+                    <p>Aprende las estructuras para crecer sin límites geográficos ni de recursos.</p>
+                </div>
+                <div style="flex: 1;">
+                    <h3>2. Optimización por IA</h3>
+                    <!-- PLACEHOLDER DE IMAGEN 3 (Uso Avanzado 2) -->
+                    <div class="image-placeholder" style="min-height: 200px;">
+                        <!-- NOTA: Ilustración conceptual de inteligencia artificial (cerebro tecnológico, código verde en fondo oscuro, manos virtuales interactuando con datos). -->
+                        <img src="URL_DE_TU_IMAGEN_DE_IA_AQUI" alt="Placeholder Uso Avanzado 2: Optimización por IA" />
+                    </div>
+                    <p>Utiliza herramientas de vanguardia para automatizar decisiones y maximizar el ROI.</p>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <!-- LLAMADOR VISUAL (CTA) MEJORADO - Diferente Color para contraste -->
+                <a href="#formulario" class="cta-button" style="background-color: #4CAF50; box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);">
+                    ACCEDE AL CONTENIDO AVANZADO
+                </a>
+            </div>
+        </section>
+
+        <section id="registro" class="section" style="text-align: center;">
+            <h2 style="color: #333;">Únete a la Comunidad VIBE</h2>
+            <form>
+                <input type="text" placeholder="Tu Nombre Completo" style="padding: 15px; margin: 10px; width: 60%; max-width: 400px; border: 1px solid #ccc; border-radius: 8px;" required><br>
+                <input type="email" placeholder="Tu Mejor Email" style="padding: 15px; margin: 10px; width: 60%; max-width: 400px; border: 1px solid #ccc; border-radius: 8px;" required><br>
+                <div class="cta-container">
+                    <button type="submit" class="cta-button">
+                        ¡QUIERO REGISTRARME AHORA! 🚀
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+    <footer style="background-color: #333; color: white; text-align: center; padding: 15px 0; margin-top: 50px;">
+        <p>&copy; 2026 VIBE Education. Todos los derechos reservados. <a href="#" style="color: #90caf9;">Política de Privacidad</a></p>
+    </footer>
+
+</body>
+</html>
